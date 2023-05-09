@@ -1,0 +1,55 @@
+POST http://localhost:5000/users/signup
+Content-Type: application/json
+
+{
+    "firstName":"Vivek",
+    "lastName":"Anand",
+    "email":"vivek@gmail.com",
+    "password":"vivek"
+}
+
+###
+
+GET http://localhost:5000/users
+
+###
+
+POST http://localhost:5000/users/signin
+Content-Type: application/json
+
+{
+    "email":"harrygg@gmail.com",
+    "password":"harrygg"
+}
+
+###
+POST http://localhost:5000/conversation/
+Content-Type: application/json
+
+{
+    "senderId":"629a63c91239d96124da2e11",
+    "receiverId":"629a02704c65f539114be743"
+}
+
+###
+GET http://localhost:5000/conversation/629a02704c65f539114be743
+
+###
+
+POST http://localhost:5000/message/
+Content-Type: application/json
+
+{
+    "conversationId":"629a488bb4c6aa27db945104",
+    "sender":"629a02914c65f539114be745",
+    "text":"Kya btaye yaar!"
+}
+
+###
+GET http://localhost:5000/message/629a64e71239d96124da2e1e
+
+//tg2001@gmail.com->tushar
+//harrygg@gmail.com->harrygg
+// tushar@gmail.com->tusharj
+//vivek@gmail.com->vivek
+//ayush@gmail.com->ayush
